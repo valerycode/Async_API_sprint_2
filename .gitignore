@@ -148,3 +148,4 @@ db
 elastic_data
 redis_data
 admin_service/movies/management/commands/db.sqlite
+tasks
