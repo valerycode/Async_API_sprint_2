@@ -6,7 +6,7 @@
 ## Technologies:
 Python 3, Django, FastAPI, Docker, Docker-Compose, NGINX, PostgreSQL, Redis, ElasticSearch, Flask, Swagger, SQLAlchemy
 
-## How to launch the project:
+## How to launch the project locally:
 Create an `env` file in the same directory where its example file is described.
 
 Launch the project using the following docker-compose command:
@@ -43,11 +43,11 @@ make setup_auth
 - Authentication service path - http://127.0.0.1:80/auth
 
 ## Running tests
-Go to the `fastapi_solution/tests/functional` directory and execute the command docker-compose up -d
+Go to the `fastapi_solution/tests/functional` directory and execute the command `docker-compose up -d`
 
 
 ### Project contributors:
 
-https://github.com/Vatson76 - Team Lead
-https://github.com/valerycode
-https://github.com/KaterinaSolovyeva
+- https://github.com/Vatson76 - Team Lead
+- https://github.com/valerycode
+- https://github.com/KaterinaSolovyeva
