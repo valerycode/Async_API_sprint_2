@@ -1,58 +1,53 @@
-# Проектная работа
+# Microservices for online cinema(educational project):
+- admin_service(admin panel for adding and editing information about films)
+- auth_service(API for user authentication and registration with social accounts)
+- fastapi_solution(API for getting films' information)
 
-## Как запустить проект:
-Создайте env файл в той же директории, где описан его example файл
+## Technologies:
+Python 3, Django, FastAPI, Docker, Docker-Compose, NGINX, PostgreSQL, Redis, ElasticSearch, Flask, Swagger, SQLAlchemy
 
-Запустите docker-compose командой:
+## How to launch the project:
+Create an `env` file in the same directory where its example file is described.
+
+Launch the project using the following docker-compose command:
 ```
 docker-compose up -d
 ```
-Создайте миграции и соберите статику командой:
+Create migrations and collect static files using the following command:
 ```
 make setup
 ```
-Загрузите первоначальные данные из sqlite в postgres командой. После этого сработает сервис ETL
-(Данные необходимо занести за 10 минут, иначе сервис ETL умрет (т.к. получит критическое кол-во ошибок для работы))
-на загрузку в ElasticSearch:
+Load initial data from SQLite to PostgreSQL using the following command. After this, the ETL service will run.
+(The data must be loaded within 10 minutes, otherwise the ETL service will die due to critical errors.)
+Load data into ElasticSearch:
 ```
 make load_data
 ```
-Создайте суперпользователя Django:
+Create a Django superuser:
 ```
 make admin
 ```
-Команда для подключения к серверу redis:
+Command to connect to the Redis server:
 ```
 make redis
 ```
-Команда для накатывания миграций в сервисе auth:
+Command to apply migrations in the auth service:
 ```
 make setup_auth
 ```
 
-## Запуск в браузере
-- Открытие административного сайта - http://127.0.0.1:80/admin/
-- Api - http://127.0.0.1:80/api/v1/
-- Страница с документацией http://127.0.0.1:80/api/openapi
-- Путь к сервису авторизации http://127.0.0.1:80/auth
+## Running in the browser
+- Open the administrative site - http://127.0.0.1:80/admin/
+- API - http://127.0.0.1:80/api/v1/
+- Documentation page - http://127.0.0.1:80/api/openapi
+- Authentication service path - http://127.0.0.1:80/auth
 
-## Запуск тестов
-Перейдите в папку fastapi_solution/tests/functional и выполните команду docker-compose up -d
+## Running tests
+Go to the `fastapi_solution/tests/functional` directory and execute the command docker-compose up -d
 
 
-### Над проектом работали:
+### Project contributors:
 
-https://github.com/Vatson76 - тимлид
-
-- Связывание сервисов
-- Трассировка
-
+https://github.com/Vatson76 - Team Lead
 https://github.com/valerycode
-
-- OAuth
-- rate limiter
-
-https://github.com/KaterinaSolovyeva (Закончила обучение)
-
-
-Все задачи перенесены в issues и закрыты
+https://github.com/KaterinaSolovyeva
