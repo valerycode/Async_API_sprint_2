@@ -46,7 +46,7 @@ pyrsistent==0.19.3
 pytest==7.2.0
 pytest-mock==3.10.0
 PyYAML==6.0
-redis==4.4.0
+redis==4.4.4
 requests==2.31.0
 six==1.16.0
 SQLAlchemy==1.4.45
