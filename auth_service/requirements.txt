@@ -16,7 +16,7 @@ Flask-SQLAlchemy==3.0.2
 googleapis-common-protos==1.56.2
 greenlet==2.0.1
 grpcio==1.53.2
-idna==3.4
+idna==3.7
 importlib-metadata==5.2.0
 iniconfig==2.0.0
 itsdangerous==2.1.2
