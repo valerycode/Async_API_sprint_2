@@ -6,5 +6,5 @@ pytest==7.2.0
 pytest-asyncio==0.20.3
 python-dotenv==0.21.0
 redis==4.4.4
-aiohttp==3.9.2
+aiohttp==3.9.4
 pytest-mock==3.10.0
